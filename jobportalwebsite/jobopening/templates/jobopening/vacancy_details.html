@@ -1,0 +1,34 @@
+{% block content %}
+
+<div align="center">
+    <form method="POST" action="{% url 'jobopening' %}">
+        {% csrf_token %}
+        Company Name:<input type = "text" name = "company_name" placeholder="Company Name" required><br>
+    Position:<input type="text" name="position" placeholder="Position" required><br>
+    Experience Required:
+    <br>
+    <input type="radio" name="experience" value="fresher">Fresher<br>
+    <input type="radio" name="experience" value="2 - 5 year">2 - 5 years<br>
+    <input type="radio" name="experience" value="5 - 10 years">5 - 10 years<br>
+    <input type="radio" name="experience" value="More than 10 years">More than 10 years<br>
+<!--        Skills Required:<textarea name="skillsrequired"></textarea>-->
+    <input type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock %}
+
+
+<!--<div align="center">-->
+<!--    <tr>-->
+<!--        <form method="POST">-->
+<!--            {% csrf_token %}-->
+<!--            <h5>Author:</h5>-->
+<!--            {{ form.as_p }}-->
+
+<!--            <h5>Book:</h5>-->
+<!--            {{ formset.as_p }}-->
+<!--            <input type="submit" value="submit">-->
+<!--        </form>-->
+<!--    </tr>-->
+<!--</div>-->
