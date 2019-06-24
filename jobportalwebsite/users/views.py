@@ -1,5 +1,4 @@
 from django.shortcuts import render ,redirect
-#from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from .form import UserRegisterForm
 from django.contrib.auth.decorators import login_required
@@ -15,7 +14,7 @@ def register(request):
 			return redirect('login')
 	else :
 		form = UserRegisterForm
-	return render(request,'home/home.html' ,{'form' : form})
+	return render(request,'users/register.html' ,{'form' : form})
 
 
 @login_required
