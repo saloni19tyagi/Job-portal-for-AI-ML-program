@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
 from jobopening.models import JobOpening
@@ -11,8 +11,7 @@ def jobopening(request):
         JobOpening.position=request.POST['position']
         JobOpening.experience=request.POST['experience']
         job_opening.save()
-        return render(request, 'jobopening/vacancy_details.html')
+        return render(request, 'home/home.html')
     else:
         return render(request, 'jobopening/vacancy_details.html')
-
 
