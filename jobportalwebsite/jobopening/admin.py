@@ -1,3 +1,4 @@
 from django.contrib import admin
+from jobopening.models import JobOpening
 
-# Register your models here.
+admin.site.register(JobOpening)
