@@ -1,3 +1,4 @@
+{%extends "users/base.html"%}
 {% block content %}
 
 <div align="center">
@@ -11,7 +12,8 @@
         <input type="radio" name="experience" value="2 - 5 year">2 - 5 years<br>
         <input type="radio" name="experience" value="5 - 10 years">5 - 10 years<br>
         <input type="radio" name="experience" value="More than 10 years">More than 10 years<br><br><br>
-    <!--        Skills Required:<textarea name="skillsrequired"></textarea>-->
+        Salary: <input type = "text" name = "salary" placeholder="Expected Salary" required><br><br><br>
+        Skills Required:<textarea name="skillsrequired" required></textarea>
         <input type="submit" value="Submit">
         </form>
 </div>

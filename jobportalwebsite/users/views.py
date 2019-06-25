@@ -3,6 +3,8 @@ from django.contrib import messages
 from .form import UserRegisterForm
 from django.contrib.auth.decorators import login_required
 
+from jobopening.models import JobOpening
+
 
 def register(request):
 	if request.method == "POST":
@@ -19,4 +21,10 @@ def register(request):
 
 @login_required
 def profile(request):
-	return render(request ,'users/profile.html')
+	return render(request, 'users/profile.html')
+
+
+def home(request):
+	if request.method == "GET":
+		k=JobOpening.objects.filter(isActive=1)
+		return render(request,"users/home.html",{'values': k})

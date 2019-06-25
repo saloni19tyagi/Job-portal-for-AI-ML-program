@@ -1,0 +1,5 @@
+jobopening/migrations/*
+users/migrations/*
+users/__pycache__/*
+jobportalwebsite/__pycache__/*
+*.pyc
