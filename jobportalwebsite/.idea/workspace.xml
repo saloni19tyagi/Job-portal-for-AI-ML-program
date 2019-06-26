@@ -2,48 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5b61777-fbc1-41fe-bc7d-bff3c7dfd0af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jobopening/templates/jobopening/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobopening/templates/jobopening/details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobopening/templates/jobopening/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jobopening/templates/jobopening/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/project_ppt2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0002_auto_20190625_1232.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0003_register_city.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/static/accounts/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/static/accounts/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobopening/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobopening/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobopening/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobopening/apps.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jobopening/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobopening/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobopening/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobopening/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobopening/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobopening/templates/details.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jobopening/templates/jobopening/vacancy_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/jobopening/templates/jobopening/vacancy_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobopening/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jobopening/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobopening/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobopening/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobopening/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobportalwebsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobportalwebsite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jobportalwebsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobportalwebsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/form.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0002_profile_bio.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/static/users/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/base1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,34 +44,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jobopening/templates/jobopening/home.html">
+        <entry file="file://$PROJECT_DIR$/jobportalwebsite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobopening/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobopening/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="867">
+              <caret line="51" column="35" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -129,7 +92,6 @@
         <option value="$PROJECT_DIR$/jobopening/templates/jobopening/base2.html" />
         <option value="$PROJECT_DIR$/jobopening/templates/jobopening/base1.html" />
         <option value="$PROJECT_DIR$/users/views.py" />
-        <option value="$PROJECT_DIR$/jobportalwebsite/settings.py" />
         <option value="$PROJECT_DIR$/jobopening/templates/jobopening/vacancy_details.html" />
         <option value="$PROJECT_DIR$/jobopening/admin.py" />
         <option value="$PROJECT_DIR$/jobopening/templates/jobopening/base.html" />
@@ -137,9 +99,10 @@
         <option value="$PROJECT_DIR$/jobopening/templates/jobopening/details.html" />
         <option value="$PROJECT_DIR$/jobopening/models.py" />
         <option value="$PROJECT_DIR$/jobopening/urls.py" />
-        <option value="$PROJECT_DIR$/jobportalwebsite/urls.py" />
         <option value="$PROJECT_DIR$/jobopening/views.py" />
         <option value="$PROJECT_DIR$/jobopening/templates/jobopening/home.html" />
+        <option value="$PROJECT_DIR$/jobportalwebsite/settings.py" />
+        <option value="$PROJECT_DIR$/jobportalwebsite/urls.py" />
       </list>
     </option>
   </component>
@@ -161,24 +124,6 @@
             <path>
               <item name="jobportalwebsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobportalwebsite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobportalwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobportalwebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="jobopening" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobportalwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobportalwebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="jobopening" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobportalwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobportalwebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="jobopening" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="jobopening" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jobportalwebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -272,9 +217,6 @@
     <entry file="file://$PROJECT_DIR$/users/form.py" />
     <entry file="file://$PROJECT_DIR$/users/tests.py" />
     <entry file="file://$PROJECT_DIR$/account/templates/account/login.html" />
-    <entry file="file://$PROJECT_DIR$/db.sqlite3">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/templates/home/home.html" />
     <entry file="file://$PROJECT_DIR$/home/views.py" />
     <entry file="file://$PROJECT_DIR$/home/urls.py" />
@@ -362,13 +304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobportalwebsite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobopening/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -376,20 +311,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobportalwebsite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobopening/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="204">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -406,10 +331,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db.sqlite3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5262" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobportalwebsite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jobopening/templates/jobopening/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        <state relative-caret-position="884">
+          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobportalwebsite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="35" />
         </state>
       </provider>
     </entry>
