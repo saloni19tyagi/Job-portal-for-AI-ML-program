@@ -1,6 +1,4 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
-from django.contrib import auth
+from django.shortcuts import render,redirect
 from jobopening.models import JobOpening
 
 
@@ -13,7 +11,14 @@ def jobopening(request):
         job_opening.salary = request.POST['salary']
         job_opening.skillsrequired = request.POST['skillsrequired']
         job_opening.save()
-        return render(request, 'users/home.html')
+        return render(request, 'jobopening/vacancy_details.html')
     else:
         return render(request, 'jobopening/vacancy_details.html')
 
+
+def home(request):
+    if request.method == "GET":
+        k=JobOpening.objects.filter(isActive=1)
+        return render(request,"jobopening/home.html",{'post_list': k})
+    else:
+        return render(request,'jobopening/details.html')
