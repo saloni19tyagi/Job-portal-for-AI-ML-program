@@ -22,7 +22,7 @@
         <div class="row">
             <div class=" col-md-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to my awesome Blog </h3>
+                    <h3 class=" site-heading my-4 mt-3 text-white">This is Job Portal</h3>
                     <p class="text-light">We Love Django As much as you do..! &nbsp
                     </p>
                 </div>
@@ -32,26 +32,70 @@
 </header>
 <div class="container">
     <div class="row">
-        <!-- Blog Entries Column -->
+<!--         Blog Entries Column-->
         <div class="col-md-8 mt-3 left">
             {% for post in post_list %}
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title"> {{post.company_name}}</h2>
-                    <p class="card-text text-muted h6"> Position: {{post.position}} </p>
+                    <p class="card-text"> Position: {{post.position}} </p>
                     <p class="card-text">Experience: {{post.experience}}</p>
                     <p class="card-text">Skills Required: {{post.skillsrequired}}</p>
-                    <form  action="{% url 'home' %}" method="POST">
-                        {% csrf_token %}
-                        <button class="btn btn-primary" >Read More</button>
-                    </form>
-                </div>
+<!--                    <a href="home?id={{post.id}}" >Read More</a>-->
 
-            </div>
-            {% endfor %}
-        </div>
+
+                    <button type="button" class="btn bt-danger" data-toggle="modal" data-target="#MyModal">Read More</button>
+                    <div id="MyModal" class="modal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">Details
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h2 class="card-title"> {{post.company_name}}</h2>
+                                        <p class="card-text"> Position: {{post.position}} </p>
+                                        <p class="card-text">Experience: {{post.experience}}</p>
+                                        <p class="card-text">Skills Required: {{post.skillsrequired}}</p>
+                                        <p class="card-text">Salary: {{post.salary}}</p>
+<!--                                        <a href="home?id={{detail.id}}" >Apply</a>-->
+
+                                        <button type="button" class="btn bt-danger" data-toggle="modal" data-target="#Applied">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 {% endfor %}
+
+                                            <div id="Applied" class="modal" role="dialog">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <form method="POST" action="{% url 'store_applications' %}">
+                                                            {% csrf_token %}
+                                                        <button type="button" class="close" data-dismiss="modal" >&times;</button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-body">You have successfully applied!</div>
+                                                        <div class="modal-footer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+                                </div>
+                            </div>
+                        </div>
         {% block sidebar %} {% include 'jobopening/sidebar.html' %} {% endblock sidebar %}
-    </div>
-</div>
-</div>
+                    </div>
 {%endblock%}
