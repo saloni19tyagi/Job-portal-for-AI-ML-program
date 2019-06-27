@@ -1,21 +1,31 @@
-{%extends "accounts/base.html"%}
-{%load crispy_forms_tags%}
-{% block content %}
-	<div class = "content-group">
-		<form method="POST">
-			{% csrf_token %}
-			<fieldset class = "form-group">
-				<legend class = "border-bottom mb-4">Login</legend>
-				{{ form|crispy }}
-			</fieldset>	
-			<div class = "form-group">
-				<button class = "btn btn-outline-info" type = 'submit'>Login</button>
+{% extends "accounts/base.html"%}
+ {% block content %}
+ <div class = "content-group">
+ 	<form method = "POST">
+ 		{% csrf_token %}
+ 		<fieldset class = "form-group">
+ 			<legend class = "border-bottom mb-4">Login</legend>
+ 		</fieldset>
+<!--  		{% for message in messages %}
+			<div class="alert alert-success">
+                <a class="close" href="#" data-dismiss="alert">×</a>
+					{{ message }}
 			</div>
-		</form >
-		<div class = "border-top pt-3">
+        {% endfor %} -->
+
+ 		<div class = "container">
+ 			Email     <input type="text" name="email" placeholder="Email" required><br><br>
+ 			Password <input type="password" name="password" placeholder="Password" required><br><br>
+ 			<button class = "btn btn-outline-info" type = 'submit'>Login</button>
+ 		</div>
+
+ 	</form>
+ 	<div class = "border-top pt-3">
 			<small class = "text-muted">
 				Need An Account? <a class ="ml-2" href="{% url 'register'%}">Sign Up Now</a>
 			</small>
 		</div>
-	</div>	
-{% endblock content %}
+ </div>
+ {% endblock content %}
+
+
