@@ -1,0 +1,82 @@
+{% extends "accounts/base.html"%}
+{% block content %}
+	<style type="text/css">
+		body{
+			background-image: url("https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA5Ni80OTgvb3JpZ2luYWwvYXJ0aWZpY2lhbC1pbnRlbGxpZ2VuY2UuanBn");
+			width: 80vw;
+			height: 92vh; 
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			/*position: relative;*/
+		}
+		
+		div.transbox {
+  			margin: 1px;
+  			background-color: #ffffff;
+  			border: 1px solid black;
+  			opacity: 0.6;
+  			width: 40px ;
+  			filter: alpha(opacity=60); /* For IE8 and earlier */
+  			/*padding-right: 98px;*/
+		}
+
+
+		div.transbox p {
+ 			margin: 10%;
+  			font-weight: bold;
+  			color: #000000;
+  			/*padding-right: 980px;
+  			padding-top: 87px;*/
+		}
+	</style>
+	<div align="center">
+	<div id="white-box-id" class="white-box">
+		<br>
+		<button style="background-color:white ; color: #5f788a ; margin-top:50px; ;width:15em; height:3em; text-decoration-color: #5f788a" id="register-btn" type="button"  class = "btn btn-outline-info" data-toggle="modal" data-target="#MyModal">Register with Us</button><br><br><br>
+    	<a href = "{%url 'login' %}"><button id="login-btn" style="background-color:white; color: #5f788a ;width:15em;height:3em; text-decoration-color: #5f788a" class = "btn btn-outline-info" type = 'button'>Login</button></a>
+			
+	</div>
+</div>
+  
+		
+			<div id="MyModal" class="modal" role="dialog">
+			<div class="modal-dialog">
+			    <div  class="modal-content">
+			        <div class="modal-header">
+			                <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        </div>
+
+			        <div class="modal-body">
+			                	<div >
+			                		<div>
+			                    		<div  class="card mb-4">
+			                        		<div class="card-body">
+			                            		<h2 class="card-title">
+			           <a href="{%url 'company'%}"><button class = "btn btn-outline-info" type = 'button'>Register as a Company</button></a>
+		
+			                            		</h2>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div>
+			                        	<div  class="card mb-4">
+			                        		<div class="card-body">
+			                            		<h2 class="card-title"> 
+		<a href="{%url 'register'%}"><button class = "btn btn-outline-info" type = 'button'>Register as a AI/ML Candidate</button></a>
+			                            		</h2>
+			                                </div>
+			                            </div>
+			                        </div>
+			                                            </div>
+			                                        </div>
+			                                   
+
+			       	<div class="modal-footer">
+			                                </div>
+			                                </div>
+			                            </div>
+			                        </div>
+
+                                              
+ 			
+ {% endblock content %}

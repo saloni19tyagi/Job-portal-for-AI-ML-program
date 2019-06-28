@@ -26,8 +26,3 @@ def home(request):
         k = JobOpening.objects.filter(id = id1)
         return render(request,'jobopening/details.html',{'detailing' : k})
 
-
-def store_applications(request):
-    if request.method == "POST":
-        print("ndvhb")
-        return render(request,'jobopening/vacancy_details.html')

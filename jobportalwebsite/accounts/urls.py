@@ -5,10 +5,10 @@ from accounts import views
 
 urlpatterns = [
 
+path('dashboard/',views.dashboard,name ='dashboard') ,
 path('register/',  views.register,name='register'),
+path('company/',  views.company,name='company'),
 path('login/',views.login, name='login') ,
 path('logout/', views.logout, name = 'logout') ,
-# path('logout/',auth_views.LogoutView.as_view(template_name='accounts/logout.html'), name='logout'),
-
 ]
 

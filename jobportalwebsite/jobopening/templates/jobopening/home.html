@@ -1,10 +1,14 @@
-{% extends 'jobopening/base.html' %}
+{% extends 'jobopening/jobopening_base.html' %}
 {% block content %}
 <style>
     body {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
         background-color: #fdfdfd;
+        background-image:url("https://www.ciol.com/wp-content/uploads/2019/05/IIIT-Hyderabad-and-TalentSprint-executive-programs-on-AI-and-ML-Blockchain-and-Distributed-Ledger-Technologies.jpg") 
+        background-repeat: no-repeat;
+
+        /*background-size: 100% 100%;*/
     }
 
     .head_text {
@@ -16,7 +20,7 @@
     }
 </style>
 
-<header class="masthead">
+<!-- <header class="masthead">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -29,58 +33,55 @@
             </div>
         </div>
     </div>
-</header>
-<div class="container">
-    <div class="row">
+</header> -->
+<div style="margin-left:40%;" class="container">
+    <div  class="row">
 <!--         Blog Entries Column-->
-        <div class="col-md-8 mt-3 left">
+        <div  class="col-md-8 mt-3 left">
             {% for post in post_list %}
             <div class="card mb-4">
                 <div class="card-body">
-                    <h2 class="card-title"> {{post.company_name}}</h2>
-                    <p class="card-text"> Position: {{post.position}} </p>
-                    <p class="card-text">Experience: {{post.experience}}</p>
-                    <p class="card-text">Skills Required: {{post.skillsrequired}}</p>
+                    <h2 class="card-title"> <strong>{{post.company_name}}</strong></h2>
+                    <p class="card-text"> <strong>Position: </strong>{{post.position}} </p>
+                    <p class="card-text"><strong>Experience: </strong>{{post.experience}}</p>
+                    <p class="card-text"><strong>Skills Required: </strong>{{post.skillsrequired}}</p>
 <!--                    <a href="home?id={{post.id}}" >Read More</a>-->
 
 
-                    <button type="button" class="btn bt-danger" data-toggle="modal" data-target="#MyModal">Read More</button>
+                    <button class = "btn btn-outline-info" type="button" class="btn bt-danger" data-toggle="modal" data-target="#MyModal">Read More</button>
+
                     <div id="MyModal" class="modal" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">Details
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
-
                                 <div class="card mb-4">
                                     <div class="card-body">
-                                        <h2 class="card-title"> {{post.company_name}}</h2>
-                                        <p class="card-text"> Position: {{post.position}} </p>
-                                        <p class="card-text">Experience: {{post.experience}}</p>
-                                        <p class="card-text">Skills Required: {{post.skillsrequired}}</p>
-                                        <p class="card-text">Salary: {{post.salary}}</p>
+                                        <h2 class="card-title"> <strong>{{post.company_name}}</strong></h2>
+                                        <p class="card-text"> <strong>Position: </strong>{{post.position}} </p>
+                                        <p class="card-text"><strong>Experience: </strong>{{post.experience}}</p>
+                                        <p class="card-text"><strong>Skills Required: </strong>{{post.skillsrequired}}</p>
+                                        <p class="card-text"><strong>Salary: </strong>{{post.salary}}</p>
 <!--                                        <a href="home?id={{detail.id}}" >Apply</a>-->
-
-                                        <button type="button" class="btn bt-danger" data-toggle="modal" data-target="#Applied">Apply</button>
+                                        <button class = "btn btn-outline-info" type="button" class="btn bt-danger" data-toggle="modal" data-target="#Applied">Apply</button>
+            
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
+                </div>
+            </div>
                  {% endfor %}
 
                                             <div id="Applied" class="modal" role="dialog">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <form method="POST" action="{% url 'store_applications' %}">
-                                                            {% csrf_token %}
-                                                        <button type="button" class="close" data-dismiss="modal" >&times;</button>
-                                                        </form>
-                                                    </div>
+                                                        <button type="button" class="close" data-dismiss="modal" >&times;</button>                                                    </div>
                                                     <div class="modal-body">You have successfully applied!</div>
                                                         <div class="modal-footer">
                                                         </div>
@@ -96,6 +97,5 @@
                                 </div>
                             </div>
                         </div>
-        {% block sidebar %} {% include 'jobopening/sidebar.html' %} {% endblock sidebar %}
                     </div>
 {%endblock%}

@@ -40,7 +40,7 @@ ul {
   color: #444444;
 }
 
-a.article-title:hover {
+.article-title:hover {
   color: #428bca;
   text-decoration: none;
 }
@@ -74,7 +74,7 @@ a.article-title:hover {
 
 .account-img {
   height: 125px;
-  width: 125px;
+  width: 125px;:;
   margin-right: 20px;
   margin-bottom: 16px;
 }
@@ -82,3 +82,28 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+.white-box {
+    background-color:#5f788a ;
+    color: black;
+    opacity:0.9;
+    width:400px;
+    height:300px;
+    margin-top: 200px;
+    margin-left: 70%;
+    border: 1px solid grey;
+  }
+/*.register-btn{
+  margin-top: 50px;
+  width:15em;
+  height:3em;
+  color: white;
+  }
+
+.login-btn{
+  margin-top: 50px;
+  width:15em;
+  height:3em;
+  color: white;
+  }
+*/

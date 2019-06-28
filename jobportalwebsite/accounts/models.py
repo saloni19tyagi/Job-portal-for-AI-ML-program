@@ -22,3 +22,15 @@ class Register(models.Model) :
 	def __str__(self):
 		return self.name
 
+class Login(models.Model):
+
+	id = models.AutoField(primary_key=True)
+
+class Company(models.Model) :
+	name = models.CharField(max_length = 50, default = "")
+	email = models.EmailField(max_length = 50,primary_key=True)
+	mobile_number = PhoneNumberField(default="")
+	details = models.TextField()
+	is_valid = models.BooleanField(default = False)
+	password = models.CharField(default = "" ,max_length = 50)
+	

@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jobopening',
     'accounts' ,
+    'phonenumber_field',
+
 ]
 
 MIDDLEWARE = [
@@ -124,3 +126,4 @@ STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'register'
 LOGIN_URL = 'login'
+MEDIA_ROOT = ''
